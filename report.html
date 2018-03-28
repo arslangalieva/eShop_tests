@@ -1,0 +1,377 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>27</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>8</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" cellspacing="1" cellpadding="1" border="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">log_on</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">create_coupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">search_and_delete_coupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">log_out</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">log_on.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">log_on</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/auth/login/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>css=section#page input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>css=section#page button[type='submit']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>link=Logout</td>
+	<td>Logout</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">create_coupon.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">create_coupon</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>link=eShop</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=div#collapseOne a[href='http://open-eshop.stqa.ru/oc-panel/coupon']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>setSpeed</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>css=i.glyphicon-pencil</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>id=name</td>
+	<td>test_coupon</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>id=discount_amount</td>
+	<td>1</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=td.day.active</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>//div//tr/td[text()='test_coupon']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>pause</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>?? SuccessCoupon test_coupon created</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">search_and_delete_coupon.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">search_and_delete_coupon</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>type</td>
+	<td>name=name</td>
+	<td>test_coupon</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>//button[@class='btn'][@type='submit']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>pause</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=i.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>setSpeed</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>css=button.confirm</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>css=div.panel.panel-default &gt; div.panel-body</td>
+	<td>test_coupon</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">log_out.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">log_out</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>click</td>
+	<td>//a[contains(@href, '#')]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>css=section#page input[name='email']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>css=section#page input[name='password']</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>xpath=(//a[contains(text(),'Register')])[3]</td>
+	<td>Register</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>css=section#page button[type='submit']</td>
+	<td>Login</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/log_on.html
+info: Executing: |open | /oc-panel/auth/login/ |  |
+info: Executing: |type | css=section#page input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Executing: |type | css=section#page input[name=&apos;password&apos;] | demo |
+info: Executing: |pause | 3000 |  |
+info: Executing: |clickAndWait | css=section#page button[type=&apos;submit&apos;] |  |
+info: Executing: |assertText | link=Logout | Logout |
+info: Starting test /selenium-server/tests/create_coupon.html
+info: Executing: |open | /oc-panel |  |
+info: Executing: |click | link=eShop |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=div#collapseOne a[href=&apos;http://open-eshop.stqa.ru/oc-panel/coupon&apos;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |setSpeed | 2000 |  |
+info: Executing: |clickAndWait | css=i.glyphicon-pencil |  |
+info: Executing: |setSpeed | 0 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=name |  |
+info: Executing: |type | id=name | test_coupon |
+info: Executing: |type | id=discount_amount | 1 |
+info: Executing: |click | css=td.day.active |  |
+info: Executing: |clickAndWait | name=submit |  |
+info: Executing: |selectWindow | null |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertElementPresent | //div//tr/td[text()=&apos;test_coupon&apos;] |  |
+info: Executing: |pause | 0 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertText | css=div.alert.alert-success | ?? SuccessCoupon test_coupon created |
+info: Starting test /selenium-server/tests/search_and_delete_coupon.html
+info: Executing: |open | /oc-panel/Coupon |  |
+info: Executing: |type | name=name | test_coupon |
+info: Executing: |clickAndWait | //button[@class=&apos;btn&apos;][@type=&apos;submit&apos;] |  |
+info: Executing: |pause | 0 |  |
+info: Executing: |click | css=i.glyphicon-trash |  |
+info: Executing: |setSpeed | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=button.confirm |  |
+info: Executing: |setSpeed | 0 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertElementPresent | css=div.panel.panel-default &gt; div.panel-body | test_coupon |
+info: Starting test /selenium-server/tests/log_out.html
+info: Executing: |click | //a[contains(@href, &apos;#&apos;)] |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Executing: |assertText | css=section#page input[name=&apos;email&apos;] |  |
+info: Executing: |assertText | css=section#page input[name=&apos;password&apos;] |  |
+info: Executing: |assertText | xpath=(//a[contains(text(),&apos;Register&apos;)])[3] | Register |
+info: Executing: |assertText | css=section#page button[type=&apos;submit&apos;] | Login |
+</pre></body></html>
